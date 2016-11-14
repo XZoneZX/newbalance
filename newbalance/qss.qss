@@ -1,0 +1,20 @@
+QPushButton  
+{    
+    border-style: outset;
+    border-width: 1px;
+    border-color: beige;
+    border-radius:1px;
+    background-color: qlineargradient(spread:reflect, x1:1, y1:0.603, x2:1, y2:0, stop:0.0284091 rgba(0, 0, 0, 255), stop:1 rgba(143, 145, 143, 255));
+    color:white;
+
+}  
+
+QLabel
+{
+    color:white;
+}
+
+QMessageBox
+{
+    background-color:black;
+}
