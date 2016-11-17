@@ -7,5 +7,6 @@
         <file>pic/04.jpg</file>
         <file>pic/05.jpg</file>
         <file>pic/06.jpg</file>
+        <file>test.txt</file>
     </qresource>
 </RCC>

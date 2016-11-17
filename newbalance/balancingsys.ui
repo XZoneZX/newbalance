@@ -16,8 +16,8 @@
   <widget class="QLabel" name="speedDisplay">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>140</y>
+     <x>150</x>
+     <y>230</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -34,8 +34,8 @@
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>600</y>
+     <x>380</x>
+     <y>210</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -52,8 +52,8 @@
   <widget class="QLabel" name="leftAngleDisplay">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>600</y>
+     <x>70</x>
+     <y>190</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -67,13 +67,13 @@
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="calibrateButton">
+  <widget class="QPushButton" name="ui_window8_btn_calibrateButton">
    <property name="geometry">
     <rect>
-     <x>770</x>
-     <y>610</y>
-     <width>151</width>
-     <height>31</height>
+     <x>550</x>
+     <y>350</y>
+     <width>71</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -83,8 +83,8 @@
   <widget class="QLabel" name="rightAngleDisplay">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>600</y>
+     <x>300</x>
+     <y>210</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -101,8 +101,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>540</y>
+     <x>300</x>
+     <y>270</y>
      <width>72</width>
      <height>31</height>
     </rect>
@@ -119,8 +119,8 @@
   <widget class="QLabel" name="leftLabel">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>530</y>
+     <x>70</x>
+     <y>140</y>
      <width>81</width>
      <height>41</height>
     </rect>
@@ -139,8 +139,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>560</y>
+     <x>170</x>
+     <y>160</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -157,10 +157,10 @@
   <widget class="QPushButton" name="startButton">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>560</y>
-     <width>151</width>
-     <height>51</height>
+     <x>250</x>
+     <y>170</y>
+     <width>61</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -170,8 +170,8 @@
   <widget class="QLabel" name="speedLabel">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>530</y>
+     <x>200</x>
+     <y>260</y>
      <width>81</width>
      <height>41</height>
     </rect>
@@ -190,8 +190,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>600</y>
+     <x>160</x>
+     <y>190</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -208,8 +208,8 @@
   <widget class="QLabel" name="rightLabel">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>520</y>
+     <x>330</x>
+     <y>150</y>
      <width>81</width>
      <height>41</height>
     </rect>
@@ -228,8 +228,8 @@
   <widget class="QLabel" name="leftWeightDisplay">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>570</y>
+     <x>70</x>
+     <y>160</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -246,8 +246,8 @@
   <widget class="QLabel" name="rightWeightDisplay">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>560</y>
+     <x>300</x>
+     <y>180</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -264,8 +264,8 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>570</y>
+     <x>380</x>
+     <y>180</y>
      <width>31</width>
      <height>31</height>
     </rect>
@@ -567,8 +567,8 @@
   <widget class="QLabel" name="speedLabel_3">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>610</y>
+     <x>200</x>
+     <y>480</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -587,8 +587,8 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>650</y>
+     <x>30</x>
+     <y>520</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -602,11 +602,11 @@
     <string>k11Amp：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="k11AmpDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k11AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>650</y>
+     <x>110</x>
+     <y>520</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -623,11 +623,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="k11PhaDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k11PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>650</y>
+     <x>340</x>
+     <y>520</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -644,11 +644,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="k12PhaDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k12PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>690</y>
+     <x>340</x>
+     <y>560</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -665,11 +665,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="k12AmpDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k12AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>690</y>
+     <x>110</x>
+     <y>560</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -766,11 +766,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="k22PhaDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k22PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>780</y>
+     <x>340</x>
+     <y>650</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -787,11 +787,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="k22AmpDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k22AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>780</y>
+     <x>110</x>
+     <y>650</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -808,11 +808,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="k21PhaDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k21PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>740</y>
+     <x>340</x>
+     <y>610</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -829,11 +829,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="k21AmpDisplay">
+  <widget class="QLabel" name="ui_window9_ledit_k21AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>740</y>
+     <x>110</x>
+     <y>610</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -853,8 +853,8 @@
   <widget class="QLabel" name="label_14">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>650</y>
+     <x>250</x>
+     <y>520</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -871,8 +871,8 @@
   <widget class="QLabel" name="label_17">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>690</y>
+     <x>250</x>
+     <y>560</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -889,8 +889,8 @@
   <widget class="QLabel" name="label_18">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>690</y>
+     <x>30</x>
+     <y>560</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -907,8 +907,8 @@
   <widget class="QLabel" name="label_23">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>740</y>
+     <x>250</x>
+     <y>610</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -925,8 +925,8 @@
   <widget class="QLabel" name="label_26">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>740</y>
+     <x>30</x>
+     <y>610</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -943,8 +943,8 @@
   <widget class="QLabel" name="label_28">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>780</y>
+     <x>250</x>
+     <y>650</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -961,8 +961,8 @@
   <widget class="QLabel" name="label_29">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>780</y>
+     <x>30</x>
+     <y>650</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -1239,7 +1239,7 @@ background-color:rgb(130, 130, 130)
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>180</y>
+     <y>190</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1252,7 +1252,7 @@ background-color:rgb(130, 130, 130)
    <property name="geometry">
     <rect>
      <x>240</x>
-     <y>200</y>
+     <y>210</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1398,7 +1398,7 @@ background-color:rgb(130, 130, 130)
     <string>请输入：平面1试重质量/g</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ui_window70_tip2">
+  <widget class="QLabel" name="ui_window70_lb_tip2">
    <property name="geometry">
     <rect>
      <x>650</x>
@@ -1434,7 +1434,7 @@ background-color:rgb(130, 130, 130)
     </rect>
    </property>
    <property name="text">
-    <string>确认</string>
+    <string>下一步</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window0_comcondition">
@@ -2513,7 +2513,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
     </rect>
    </property>
    <property name="text">
-    <string>定位标定</string>
+    <string>标定</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window8_lb_tip">
@@ -2664,7 +2664,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <zorder>speedDisplay</zorder>
   <zorder>label_5</zorder>
   <zorder>leftAngleDisplay</zorder>
-  <zorder>calibrateButton</zorder>
+  <zorder>ui_window8_btn_calibrateButton</zorder>
   <zorder>rightAngleDisplay</zorder>
   <zorder>label</zorder>
   <zorder>leftLabel</zorder>
@@ -2694,18 +2694,18 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <zorder>ui_window8_lb_calibrateLabel</zorder>
   <zorder>speedLabel_3</zorder>
   <zorder>label_7</zorder>
-  <zorder>k11AmpDisplay</zorder>
-  <zorder>k11PhaDisplay</zorder>
-  <zorder>k12PhaDisplay</zorder>
-  <zorder>k12AmpDisplay</zorder>
+  <zorder>ui_window9_ledit_k11AmpDisplay</zorder>
+  <zorder>ui_window9_ledit_k11PhaDisplay</zorder>
+  <zorder>ui_window9_ledit_k12PhaDisplay</zorder>
+  <zorder>ui_window9_ledit_k12AmpDisplay</zorder>
   <zorder>calibrateAngleInput2</zorder>
   <zorder>label_20</zorder>
   <zorder>label_21</zorder>
   <zorder>calibrateWeightInput2</zorder>
-  <zorder>k22PhaDisplay</zorder>
-  <zorder>k22AmpDisplay</zorder>
-  <zorder>k21PhaDisplay</zorder>
-  <zorder>k21AmpDisplay</zorder>
+  <zorder>ui_window9_ledit_k22PhaDisplay</zorder>
+  <zorder>ui_window9_ledit_k22AmpDisplay</zorder>
+  <zorder>ui_window9_ledit_k21PhaDisplay</zorder>
+  <zorder>ui_window9_ledit_k21AmpDisplay</zorder>
   <zorder>label_14</zorder>
   <zorder>label_17</zorder>
   <zorder>label_18</zorder>
@@ -2745,7 +2745,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <zorder>ui_window70_ledit_mass1</zorder>
   <zorder>ui_window70_ledit_mass2</zorder>
   <zorder>ui_window70_lb_tip1</zorder>
-  <zorder>ui_window70_tip2</zorder>
+  <zorder>ui_window70_lb_tip2</zorder>
   <zorder>ui_window70_btn_back</zorder>
   <zorder>ui_window70_btn_ok</zorder>
   <zorder>ui_window0_comcondition</zorder>

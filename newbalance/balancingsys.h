@@ -31,7 +31,7 @@ private slots:
 
     void on_paramentOkBtn_clicked();
 
-    void on_calibrateButton_clicked();
+    void on_ui_window8_btn_calibrateButton_clicked();
 
     void on_ui_parameterok_clicked();
 
@@ -85,6 +85,12 @@ private slots:
 
     void on_ui_window6_btn_calibrate_clicked();
 
+    void on_ui_window7_btn_calibration_clicked();
+
+    void on_ui_window70_btn_ok_clicked();
+
+    void on_ui_window7_btn_calibrationparameter_clicked();
+
 private:
     void initui_window0_cb_comport( );
     void dataDisplayFresh(qreal a1, qreal p1, qreal a2, qreal p2);
@@ -100,6 +106,7 @@ private:
     qint32 startButtonFlag;
     qint32 calibrationFlag;
     qint32 stepCalibration;   //0:无试重；1：左平面；2：右平面
+    qint32 stepWeightSet;
     Ui::BalancingSys *ui;
 
     QButtonGroup *supportMethodGroup;
