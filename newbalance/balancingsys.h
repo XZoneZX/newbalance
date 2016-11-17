@@ -22,7 +22,7 @@ public:
 
 
 private slots:
-    void on_startButton_clicked ( );
+    void on_ui_window6_btn_startButton_clicked ( );
     void startButtonChange ( );
     void calibrationButtonChange ( );
     void SerialOpenError (int errorCode);
@@ -90,6 +90,8 @@ private slots:
     void on_ui_window70_btn_ok_clicked();
 
     void on_ui_window7_btn_calibrationparameter_clicked();
+
+    void on_ui_window6_btn_parameterorgraphic_clicked();
 
 private:
     void initui_window0_cb_comport( );
