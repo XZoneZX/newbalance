@@ -23,6 +23,7 @@ public:
     void stopSlave ( );
     void run ( );
     void stop ( );
+    char* zijian(void);
 
     int tmp_checkSerialPort(const QString &serialPortName);
 
@@ -56,6 +57,7 @@ private:
     int  openSerialPort (const QString &serialPortName);
     void closeSerialPort ( );
     int  initSerialPort ( );
+
     qreal charToFloat (char d[4], qreal input, qreal gain);
     QMutex mutex;
     bool quit;

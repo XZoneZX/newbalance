@@ -93,6 +93,14 @@ private slots:
 
     void on_ui_window6_btn_parameterorgraphic_clicked();
 
+    void on_ui_window0_selftest_clicked();
+
+    void on_ui_window6_btn_measure_clicked();
+
+    void on_ui_window6_btn_back_clicked();
+
+    void on_ui_window8_btn_back_clicked();
+
 private:
     void initui_window0_cb_comport( );
     void dataDisplayFresh(qreal a1, qreal p1, qreal a2, qreal p2);
@@ -103,6 +111,7 @@ private:
     bool saveFile(const QString &filename);
     void saveTheParameter();
     void drawPolarPoint(qreal a, qreal p,QLabel *polar);
+
 
     CalculateFunction calculateFunction;
     qint32 startButtonFlag;

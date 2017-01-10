@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1005</width>
-    <height>822</height>
+    <width>824</width>
+    <height>486</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,19 +16,19 @@
   <widget class="QLabel" name="ui_window6_lb_speedDisplay">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>230</y>
-     <width>101</width>
+     <x>400</x>
+     <y>200</y>
+     <width>91</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>12</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
    <property name="text">
-    <string/>
+    <string>转速</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -52,9 +52,9 @@
   <widget class="QLabel" name="ui_window6_lb_leftAngleDisplay">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>190</y>
-     <width>101</width>
+     <x>160</x>
+     <y>330</y>
+     <width>211</width>
      <height>31</height>
     </rect>
    </property>
@@ -70,10 +70,10 @@
   <widget class="QPushButton" name="ui_window8_btn_calibrateButton">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>350</y>
-     <width>71</width>
-     <height>21</height>
+     <x>70</x>
+     <y>410</y>
+     <width>371</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -83,9 +83,9 @@
   <widget class="QLabel" name="ui_window6_lb_rightAngleDisplay">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>210</y>
-     <width>101</width>
+     <x>490</x>
+     <y>350</y>
+     <width>231</width>
      <height>31</height>
     </rect>
    </property>
@@ -157,11 +157,18 @@
   <widget class="QPushButton" name="ui_window6_btn_startButton">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>170</y>
-     <width>61</width>
-     <height>21</height>
+     <x>405</x>
+     <y>370</y>
+     <width>75</width>
+     <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>开始检测</string>
@@ -228,9 +235,9 @@
   <widget class="QLabel" name="ui_window6_lb_leftWeightDisplay">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>160</y>
-     <width>101</width>
+     <x>160</x>
+     <y>300</y>
+     <width>211</width>
      <height>31</height>
     </rect>
    </property>
@@ -246,9 +253,9 @@
   <widget class="QLabel" name="ui_window6_lb_rightWeightDisplay">
    <property name="geometry">
     <rect>
-     <x>320</x>
-     <y>180</y>
-     <width>101</width>
+     <x>490</x>
+     <y>320</y>
+     <width>231</width>
      <height>31</height>
     </rect>
    </property>
@@ -282,18 +289,44 @@
   <widget class="QComboBox" name="ui_window0_cb_comport">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>91</width>
-     <height>31</height>
+     <x>270</x>
+     <y>90</y>
+     <width>300</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <family>Times New Roman</family>
+     <pointsize>13</pointsize>
      <weight>75</weight>
      <bold>true</bold>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    color:white;
+    border: 3px solid white;
+    background-color:rgb(44, 147, 173);
+
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 40px;
+
+    border-left-width: 0px;
+    border-left-color: darkgray;
+    border-left-style: solid; /* just a single line */
+    border-top-right-radius: 3px; /* same radius as the QComboBox */
+    border-bottom-right-radius: 3px;
+    
+}
+
+QComboBox::down-arrow {
+    
+	image: url(:/new/prefix1/pic/arrow.png);
+}</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="speedInput">
@@ -554,21 +587,24 @@
   <widget class="QLabel" name="ui_window8_lb_calibrateLabel">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>270</y>
-     <width>81</width>
-     <height>41</height>
+     <x>740</x>
+     <y>230</y>
+     <width>181</width>
+     <height>51</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">font: &quot;Microsoft YaHei&quot; ! important;</string>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="speedLabel_3">
+  <widget class="QLabel" name="ui_window9_lb_title">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>480</y>
+     <x>390</x>
+     <y>110</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -584,11 +620,11 @@
     <string>标定结果</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
+  <widget class="QLabel" name="ui_window9_lb_k11a">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>520</y>
+     <x>220</x>
+     <y>170</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -605,8 +641,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k11AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>520</y>
+     <x>300</x>
+     <y>170</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -626,8 +662,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k11PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>520</y>
+     <x>530</x>
+     <y>170</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -647,8 +683,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k12PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>560</y>
+     <x>530</x>
+     <y>210</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -668,8 +704,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k12AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>560</y>
+     <x>300</x>
+     <y>210</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -769,8 +805,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k22PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>650</y>
+     <x>530</x>
+     <y>300</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -790,8 +826,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k22AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>650</y>
+     <x>300</x>
+     <y>300</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -811,8 +847,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k21PhaDisplay">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>610</y>
+     <x>530</x>
+     <y>260</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -832,8 +868,8 @@
   <widget class="QLabel" name="ui_window9_ledit_k21AmpDisplay">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>610</y>
+     <x>300</x>
+     <y>260</y>
      <width>121</width>
      <height>23</height>
     </rect>
@@ -850,11 +886,11 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="label_14">
+  <widget class="QLabel" name="ui_window9_lb_k11p">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>520</y>
+     <x>440</x>
+     <y>170</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -868,11 +904,11 @@
     <string>k11Pha：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_17">
+  <widget class="QLabel" name="ui_window9_lb_k12p">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>560</y>
+     <x>440</x>
+     <y>210</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -886,11 +922,11 @@
     <string>k12Pha：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_18">
+  <widget class="QLabel" name="ui_window9_lb_k12a">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>560</y>
+     <x>220</x>
+     <y>210</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -904,11 +940,11 @@
     <string>k12Amp：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_23">
+  <widget class="QLabel" name="ui_window9_lb_k21p">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>610</y>
+     <x>440</x>
+     <y>260</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -922,11 +958,11 @@
     <string>k21Pha：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_26">
+  <widget class="QLabel" name="ui_window9_lb_k21a">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>610</y>
+     <x>220</x>
+     <y>260</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -940,11 +976,11 @@
     <string>k21Amp：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_28">
+  <widget class="QLabel" name="ui_window9_lb_k22p">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>650</y>
+     <x>440</x>
+     <y>300</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -958,11 +994,11 @@
     <string>k22Pha：</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_29">
+  <widget class="QLabel" name="ui_window9_lb_k22a">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>650</y>
+     <x>220</x>
+     <y>300</y>
      <width>81</width>
      <height>23</height>
     </rect>
@@ -1051,10 +1087,24 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>70</y>
-     <width>75</width>
+     <y>10</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>欢迎页面</string>
@@ -1064,10 +1114,18 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>110</y>
-     <width>75</width>
+     <y>40</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>主界面</string>
@@ -1077,10 +1135,18 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>170</y>
-     <width>75</width>
+     <y>100</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>参数单位设置</string>
@@ -1091,27 +1157,28 @@
     <rect>
      <x>70</x>
      <y>10</y>
-     <width>921</width>
-     <height>481</height>
+     <width>751</width>
+     <height>471</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel
 {
-background-color:rgb(130, 130, 130)
+border: 3px solid white;
+background-color:rgb(44, 147, 173)
 }</string>
    </property>
    <property name="text">
-    <string>background</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="ui_window1_btn_newzhuanzifile">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>70</y>
-     <width>75</width>
-     <height>23</height>
+     <x>340</x>
+     <y>60</y>
+     <width>200</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="text">
@@ -1121,10 +1188,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window1_btn_loadzhuanzifile">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>120</y>
-     <width>75</width>
-     <height>23</height>
+     <x>340</x>
+     <y>160</y>
+     <width>200</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="text">
@@ -1134,10 +1201,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window1_btn_settime">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>170</y>
-     <width>75</width>
-     <height>23</height>
+     <x>340</x>
+     <y>260</y>
+     <width>200</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="text">
@@ -1147,10 +1214,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window1_btn_exit">
    <property name="geometry">
     <rect>
-     <x>430</x>
-     <y>220</y>
-     <width>75</width>
-     <height>23</height>
+     <x>340</x>
+     <y>360</y>
+     <width>200</width>
+     <height>60</height>
     </rect>
    </property>
    <property name="text">
@@ -1160,10 +1227,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window30_btn_previous">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>420</y>
-     <width>75</width>
-     <height>23</height>
+     <x>70</x>
+     <y>410</y>
+     <width>371</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1173,10 +1240,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window30_btn_next">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>420</y>
-     <width>75</width>
-     <height>23</height>
+     <x>440</x>
+     <y>410</y>
+     <width>381</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1186,10 +1253,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window2_btn_back">
    <property name="geometry">
     <rect>
-     <x>530</x>
-     <y>220</y>
-     <width>75</width>
-     <height>23</height>
+     <x>70</x>
+     <y>410</y>
+     <width>371</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1200,10 +1267,18 @@ background-color:rgb(130, 130, 130)
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>200</y>
-     <width>75</width>
+     <y>130</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>参数汇总</string>
@@ -1212,11 +1287,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_parameterorgraphic">
    <property name="geometry">
     <rect>
-     <x>240</x>
+     <x>405</x>
      <y>130</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>参数/图形界面</string>
@@ -1225,11 +1307,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_measure">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>150</y>
+     <x>405</x>
+     <y>280</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>连续测量</string>
@@ -1238,11 +1327,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_memory">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>190</y>
+     <x>405</x>
+     <y>310</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>记忆</string>
@@ -1251,11 +1347,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_print">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>210</y>
+     <x>405</x>
+     <y>400</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>打印</string>
@@ -1264,11 +1367,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_calibrate">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>230</y>
+     <x>405</x>
+     <y>340</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>标定</string>
@@ -1277,11 +1387,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_back">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>250</y>
+     <x>405</x>
+     <y>430</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>返回</string>
@@ -1290,8 +1407,8 @@ background-color:rgb(130, 130, 130)
   <widget class="QRadioButton" name="ui_window6_rb_aotostability">
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>110</y>
+     <x>300</x>
+     <y>270</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -1303,8 +1420,8 @@ background-color:rgb(130, 130, 130)
   <widget class="QRadioButton" name="ui_window6_rb_remaindata">
    <property name="geometry">
     <rect>
-     <x>300</x>
-     <y>110</y>
+     <x>510</x>
+     <y>270</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -1316,11 +1433,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_polar1">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>130</y>
+     <x>200</x>
+     <y>270</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>分量/极坐标</string>
@@ -1329,11 +1453,18 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window6_btn_polar2">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>130</y>
+     <x>610</x>
+     <y>270</y>
      <width>75</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Microsoft YaHei&quot; ! important;
+font:13px;
+border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);</string>
    </property>
    <property name="text">
     <string>分量/极坐标</string>
@@ -1343,10 +1474,18 @@ background-color:rgb(130, 130, 130)
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>230</y>
-     <width>75</width>
+     <y>160</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>极坐标界面</string>
@@ -1356,10 +1495,18 @@ background-color:rgb(130, 130, 130)
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>260</y>
-     <width>75</width>
+     <y>190</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>标定主界面</string>
@@ -1368,56 +1515,56 @@ background-color:rgb(130, 130, 130)
   <widget class="QLineEdit" name="ui_window70_ledit_mass1">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>280</y>
-     <width>113</width>
-     <height>20</height>
+     <x>130</x>
+     <y>120</y>
+     <width>611</width>
+     <height>61</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window70_ledit_mass2">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>340</y>
-     <width>113</width>
-     <height>20</height>
+     <x>130</x>
+     <y>310</y>
+     <width>611</width>
+     <height>61</height>
     </rect>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window70_lb_tip1">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>250</y>
-     <width>151</width>
-     <height>16</height>
+     <x>130</x>
+     <y>50</y>
+     <width>511</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：平面1试重质量/g</string>
+    <string>请输入：平面1试重质量</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window70_lb_tip2">
    <property name="geometry">
     <rect>
-     <x>650</x>
-     <y>310</y>
-     <width>151</width>
-     <height>16</height>
+     <x>130</x>
+     <y>220</y>
+     <width>511</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：平面1相位/°</string>
+    <string>请输入：平面1相位</string>
    </property>
   </widget>
   <widget class="QPushButton" name="ui_window70_btn_back">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>370</y>
-     <width>75</width>
-     <height>23</height>
+     <x>70</x>
+     <y>410</y>
+     <width>371</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1427,10 +1574,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window70_btn_ok">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>370</y>
-     <width>75</width>
-     <height>23</height>
+     <x>440</x>
+     <y>410</y>
+     <width>381</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1440,24 +1587,38 @@ background-color:rgb(130, 130, 130)
   <widget class="QLabel" name="ui_window0_comcondition">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>30</y>
-     <width>81</width>
-     <height>41</height>
+     <x>180</x>
+     <y>220</y>
+     <width>501</width>
+     <height>200</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
    </property>
    <property name="text">
     <string>提示COM状态</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window6_gvlb_polar1">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>0</y>
-     <width>111</width>
-     <height>111</height>
+     <x>170</x>
+     <y>40</y>
+     <width>220</width>
+     <height>220</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 3px solid white;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -1466,11 +1627,14 @@ background-color:rgb(130, 130, 130)
   <widget class="QLabel" name="ui_window6_gvlb_polar2">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>0</y>
-     <width>111</width>
-     <height>111</height>
+     <x>500</x>
+     <y>40</y>
+     <width>220</width>
+     <height>220</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 3px solid white;</string>
    </property>
    <property name="text">
     <string>TextLabel</string>
@@ -1479,10 +1643,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window0_next">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>100</y>
-     <width>75</width>
-     <height>23</height>
+     <x>440</x>
+     <y>410</y>
+     <width>381</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1492,10 +1656,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QPushButton" name="ui_window0_selftest">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>100</y>
-     <width>75</width>
-     <height>23</height>
+     <x>70</x>
+     <y>410</y>
+     <width>371</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1506,10 +1670,18 @@ background-color:rgb(130, 130, 130)
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>140</y>
-     <width>75</width>
+     <y>70</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>支承方式设置</string>
@@ -1518,23 +1690,26 @@ background-color:rgb(130, 130, 130)
   <widget class="QLabel" name="ui_window2_lb_support">
    <property name="geometry">
     <rect>
-     <x>620</x>
+     <x>310</x>
      <y>30</y>
-     <width>81</width>
-     <height>16</height>
+     <width>261</width>
+     <height>50</height>
     </rect>
    </property>
    <property name="text">
     <string>支承方式设置</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QRadioButton" name="ui_window2_rb_method1">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>50</y>
-     <width>89</width>
-     <height>21</height>
+     <x>130</x>
+     <y>85</y>
+     <width>151</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -1544,10 +1719,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QRadioButton" name="ui_window2_rb_method2">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>50</y>
-     <width>89</width>
-     <height>16</height>
+     <x>370</x>
+     <y>85</y>
+     <width>151</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -1557,10 +1732,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QRadioButton" name="ui_window2_rb_method3">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>50</y>
-     <width>89</width>
-     <height>16</height>
+     <x>610</x>
+     <y>90</y>
+     <width>151</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
@@ -1570,10 +1745,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QRadioButton" name="ui_window2_rb_method4">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>140</y>
-     <width>89</width>
-     <height>16</height>
+     <x>130</x>
+     <y>250</y>
+     <width>151</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -1583,10 +1758,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QRadioButton" name="ui_window2_rb_method5">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>140</y>
-     <width>89</width>
-     <height>16</height>
+     <x>370</x>
+     <y>250</y>
+     <width>151</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -1596,10 +1771,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QRadioButton" name="ui_window2_rb_method6">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>140</y>
-     <width>89</width>
-     <height>16</height>
+     <x>610</x>
+     <y>250</y>
+     <width>151</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -1609,10 +1784,10 @@ background-color:rgb(130, 130, 130)
   <widget class="QLabel" name="ui_window2_lbpic_method1">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>80</y>
-     <width>91</width>
-     <height>51</height>
+     <x>130</x>
+     <y>115</y>
+     <width>151</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1622,16 +1797,16 @@ background-image: url(:/new/prefix1/pic/01.jpg);
 }</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window2_lbpic_method2">
    <property name="geometry">
     <rect>
-     <x>630</x>
-     <y>80</y>
-     <width>91</width>
-     <height>51</height>
+     <x>370</x>
+     <y>115</y>
+     <width>151</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1641,16 +1816,16 @@ background-image: url(:/new/prefix1/pic/02.jpg);
 }</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window2_lbpic_method3">
    <property name="geometry">
     <rect>
-     <x>720</x>
-     <y>70</y>
-     <width>91</width>
-     <height>51</height>
+     <x>610</x>
+     <y>115</y>
+     <width>151</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1660,16 +1835,16 @@ background-image: url(:/new/prefix1/pic/03.jpg);
 }</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window2_lbpic_method4">
    <property name="geometry">
     <rect>
-     <x>520</x>
-     <y>160</y>
-     <width>91</width>
-     <height>51</height>
+     <x>130</x>
+     <y>285</y>
+     <width>151</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1679,16 +1854,16 @@ background-image: url(:/new/prefix1/pic/04.jpg);
 }</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window2_lbpic_method5">
    <property name="geometry">
     <rect>
-     <x>620</x>
-     <y>160</y>
-     <width>91</width>
-     <height>51</height>
+     <x>370</x>
+     <y>285</y>
+     <width>151</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1698,16 +1873,16 @@ background-image: url(:/new/prefix1/pic/05.jpg);
 }</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window2_lbpic_method6">
    <property name="geometry">
     <rect>
-     <x>730</x>
-     <y>160</y>
-     <width>91</width>
-     <height>51</height>
+     <x>610</x>
+     <y>285</y>
+     <width>151</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1717,16 +1892,16 @@ background-image: url(:/new/prefix1/pic/06.jpg);
 }</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="ui_window2_btn_next">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>220</y>
-     <width>75</width>
-     <height>23</height>
+     <x>440</x>
+     <y>410</y>
+     <width>381</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -1736,11 +1911,22 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_a">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>50</y>
-     <width>69</width>
+     <x>640</x>
+     <y>45</y>
+     <width>95</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+    color:white;
+    border: 0px solid gray;
+    background-color:rgb(44, 147, 173);
+
+}
+QComboBox::drop-down {
+border-left-width: 1px;
+}</string>
    </property>
    <item>
     <property name="text">
@@ -1761,8 +1947,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_presetspeed">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>100</y>
+     <x>350</x>
+     <y>335</y>
      <width>69</width>
      <height>22</height>
     </rect>
@@ -1776,8 +1962,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_righttolerance">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>170</y>
+     <x>670</x>
+     <y>195</y>
      <width>69</width>
      <height>22</height>
     </rect>
@@ -1816,8 +2002,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_leftinitialangle">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>240</y>
+     <x>340</x>
+     <y>110</y>
      <width>69</width>
      <height>22</height>
     </rect>
@@ -1836,8 +2022,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_rightinitialangle">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>330</y>
+     <x>650</x>
+     <y>335</y>
      <width>69</width>
      <height>22</height>
     </rect>
@@ -1856,99 +2042,99 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window3_lb_a">
    <property name="geometry">
     <rect>
-     <x>850</x>
+     <x>480</x>
      <y>50</y>
-     <width>71</width>
+     <width>120</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：A/</string>
+    <string>请输入：A</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window3_lb_presetspeed">
    <property name="geometry">
     <rect>
-     <x>810</x>
-     <y>100</y>
-     <width>111</width>
-     <height>20</height>
+     <x>210</x>
+     <y>115</y>
+     <width>160</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：预设转速/</string>
+    <string>请输入：预设转速</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window3_lb_righttolerance">
    <property name="geometry">
     <rect>
-     <x>800</x>
-     <y>170</y>
-     <width>121</width>
+     <x>510</x>
+     <y>200</y>
+     <width>160</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：右平面公差/</string>
+    <string>请输入：右平面公差</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window3_lb_leftdividednum">
    <property name="geometry">
     <rect>
-     <x>840</x>
-     <y>200</y>
-     <width>131</width>
+     <x>190</x>
+     <y>270</y>
+     <width>180</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：左平面等分数/</string>
+    <string>请输入：左平面等分数</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window3_lb_leftinitialangle">
    <property name="geometry">
     <rect>
-     <x>780</x>
-     <y>240</y>
-     <width>141</width>
+     <x>190</x>
+     <y>340</y>
+     <width>160</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：左平面起始角度/</string>
+    <string>请输入：左平面起始角度</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window3_lb_rightdividednum">
    <property name="geometry">
     <rect>
-     <x>840</x>
-     <y>290</y>
-     <width>141</width>
+     <x>510</x>
+     <y>270</y>
+     <width>160</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：右平面等分数/</string>
+    <string>请输入：右平面等分数</string>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window3_lb_rightinitialangle">
    <property name="geometry">
     <rect>
-     <x>780</x>
-     <y>330</y>
-     <width>131</width>
+     <x>510</x>
+     <y>340</y>
+     <width>140</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：右平面起始角度/</string>
+    <string>请输入：右平面起始角度</string>
    </property>
   </widget>
   <widget class="QComboBox" name="ui_window3_cb_lefttolerance">
    <property name="geometry">
     <rect>
-     <x>920</x>
-     <y>140</y>
+     <x>350</x>
+     <y>195</y>
      <width>69</width>
      <height>22</height>
     </rect>
@@ -1987,22 +2173,22 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window3_lb_lefttolerance">
    <property name="geometry">
     <rect>
-     <x>800</x>
-     <y>140</y>
-     <width>121</width>
+     <x>190</x>
+     <y>200</y>
+     <width>160</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>请输入：左平面公差/</string>
+    <string>请输入：左平面公差</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ui_window3_continuousnum">
+  <widget class="QLabel" name="ui_window3_lb_continuousnum">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>360</y>
-     <width>131</width>
+     <x>480</x>
+     <y>115</y>
+     <width>191</width>
      <height>20</height>
     </rect>
    </property>
@@ -2013,111 +2199,114 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLineEdit" name="ui_window3_ledit_a">
    <property name="geometry">
     <rect>
-     <x>860</x>
+     <x>480</x>
      <y>70</y>
-     <width>113</width>
-     <height>20</height>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_lefttolerance">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>150</y>
-     <width>113</width>
-     <height>20</height>
+     <x>190</x>
+     <y>220</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_presetspeed">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>120</y>
-     <width>113</width>
-     <height>20</height>
+     <x>210</x>
+     <y>135</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_righttolerance">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>180</y>
-     <width>113</width>
-     <height>20</height>
+     <x>510</x>
+     <y>220</y>
+     <width>191</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_leftdividednum">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>220</y>
-     <width>113</width>
-     <height>20</height>
+     <x>190</x>
+     <y>290</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_leftinitialangle">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>260</y>
-     <width>113</width>
-     <height>20</height>
+     <x>190</x>
+     <y>360</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_rightdividednum">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>310</y>
-     <width>113</width>
-     <height>20</height>
+     <x>510</x>
+     <y>290</y>
+     <width>191</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_rightinitialangle">
    <property name="geometry">
     <rect>
-     <x>830</x>
-     <y>340</y>
-     <width>113</width>
-     <height>20</height>
+     <x>510</x>
+     <y>360</y>
+     <width>191</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLineEdit" name="ui_window3_ledit_continuousnum">
    <property name="geometry">
     <rect>
-     <x>880</x>
-     <y>380</y>
-     <width>113</width>
-     <height>20</height>
+     <x>480</x>
+     <y>135</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window30_lb_correctmethod">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>280</y>
-     <width>54</width>
-     <height>12</height>
+     <x>310</x>
+     <y>30</y>
+     <width>271</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>校正方式</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="ui_window30_lb_leftright">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>300</y>
+     <x>320</x>
+     <y>80</y>
      <width>261</width>
      <height>16</height>
     </rect>
@@ -2125,12 +2314,15 @@ background-image: url(:/new/prefix1/pic/06.jpg);
    <property name="text">
     <string>左平面         右平面</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QRadioButton" name="ui_window30_rb_leftremoveweight">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>320</y>
+     <x>260</x>
+     <y>120</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2142,8 +2334,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QRadioButton" name="ui_window30_rb_leftaddweight">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>320</y>
+     <x>320</x>
+     <y>120</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2155,8 +2347,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QRadioButton" name="ui_window30_rb_rightremoveweight">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>320</y>
+     <x>470</x>
+     <y>120</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2168,8 +2360,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QRadioButton" name="ui_window30_rb_rightaddweight">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>320</y>
+     <x>550</x>
+     <y>120</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2181,21 +2373,24 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window30_lb_dispalymode">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>350</y>
-     <width>54</width>
-     <height>12</height>
+     <x>350</x>
+     <y>160</y>
+     <width>191</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>显示模式</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QRadioButton" name="ui_window30_rb_staticcouple">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>360</y>
+     <x>340</x>
+     <y>200</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2207,8 +2402,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QRadioButton" name="ui_window30_rb_static">
    <property name="geometry">
     <rect>
-     <x>280</x>
-     <y>360</y>
+     <x>530</x>
+     <y>200</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2220,8 +2415,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QRadioButton" name="ui_window30_rb_dynamic">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>360</y>
+     <x>260</x>
+     <y>200</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2233,8 +2428,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QRadioButton" name="ui_window30_rb_couplestatic">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>360</y>
+     <x>440</x>
+     <y>200</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -2246,23 +2441,26 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window30_lb_rotationset">
    <property name="geometry">
     <rect>
-     <x>200</x>
-     <y>380</y>
-     <width>54</width>
-     <height>12</height>
+     <x>350</x>
+     <y>249</y>
+     <width>191</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>转向设置</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QRadioButton" name="ui_window30_rb_forward">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>400</y>
-     <width>89</width>
-     <height>16</height>
+     <x>290</x>
+     <y>300</y>
+     <width>111</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -2272,10 +2470,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QRadioButton" name="ui_window30_rb_backward">
    <property name="geometry">
     <rect>
-     <x>220</x>
-     <y>400</y>
-     <width>89</width>
-     <height>16</height>
+     <x>490</x>
+     <y>300</y>
+     <width>111</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
@@ -2285,10 +2483,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window3_btn_next">
    <property name="geometry">
     <rect>
-     <x>870</x>
-     <y>400</y>
-     <width>75</width>
-     <height>23</height>
+     <x>440</x>
+     <y>410</y>
+     <width>381</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -2298,10 +2496,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window3_btn_previous">
    <property name="geometry">
     <rect>
-     <x>790</x>
-     <y>400</y>
-     <width>75</width>
-     <height>23</height>
+     <x>70</x>
+     <y>410</y>
+     <width>371</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -2311,23 +2509,26 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_title">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>290</y>
-     <width>54</width>
-     <height>12</height>
+     <x>300</x>
+     <y>40</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="text">
     <string>参数汇总</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="ui_window5_lb_supportmode">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>320</y>
-     <width>54</width>
-     <height>12</height>
+     <x>200</x>
+     <y>120</y>
+     <width>70</width>
+     <height>40</height>
     </rect>
    </property>
    <property name="text">
@@ -2337,10 +2538,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lbpic_support">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>320</y>
-     <width>54</width>
-     <height>12</height>
+     <x>270</x>
+     <y>90</y>
+     <width>151</width>
+     <height>101</height>
     </rect>
    </property>
    <property name="text">
@@ -2350,10 +2551,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_abcr">
    <property name="geometry">
     <rect>
-     <x>460</x>
-     <y>320</y>
-     <width>54</width>
-     <height>12</height>
+     <x>420</x>
+     <y>120</y>
+     <width>400</width>
+     <height>40</height>
     </rect>
    </property>
    <property name="text">
@@ -2363,10 +2564,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_left">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>340</y>
-     <width>54</width>
-     <height>12</height>
+     <x>200</x>
+     <y>170</y>
+     <width>600</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
@@ -2376,10 +2577,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_leftparameter">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>360</y>
-     <width>101</width>
-     <height>16</height>
+     <x>200</x>
+     <y>200</y>
+     <width>600</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
@@ -2389,10 +2590,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_right">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>380</y>
-     <width>54</width>
-     <height>12</height>
+     <x>200</x>
+     <y>260</y>
+     <width>600</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
@@ -2402,10 +2603,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_rightparameter">
    <property name="geometry">
     <rect>
-     <x>330</x>
-     <y>400</y>
-     <width>121</width>
-     <height>16</height>
+     <x>200</x>
+     <y>290</y>
+     <width>600</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
@@ -2415,10 +2616,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_displaymode">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>420</y>
-     <width>121</width>
-     <height>16</height>
+     <x>200</x>
+     <y>350</y>
+     <width>600</width>
+     <height>20</height>
     </rect>
    </property>
    <property name="text">
@@ -2428,10 +2629,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window5_btn_previous">
    <property name="geometry">
     <rect>
-     <x>290</x>
-     <y>440</y>
-     <width>75</width>
-     <height>23</height>
+     <x>70</x>
+     <y>410</y>
+     <width>251</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -2441,10 +2642,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window5_btn_cancel">
    <property name="geometry">
     <rect>
-     <x>370</x>
-     <y>440</y>
-     <width>75</width>
-     <height>23</height>
+     <x>320</x>
+     <y>410</y>
+     <width>251</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -2454,10 +2655,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window5_btn_save">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>440</y>
-     <width>75</width>
-     <height>23</height>
+     <x>570</x>
+     <y>410</y>
+     <width>251</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -2467,10 +2668,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window7_btn_calibration">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>270</y>
-     <width>75</width>
-     <height>23</height>
+     <x>340</x>
+     <y>150</y>
+     <width>201</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
@@ -2480,10 +2681,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window7_btn_calibrationparameter">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>300</y>
-     <width>75</width>
-     <height>23</height>
+     <x>340</x>
+     <y>260</y>
+     <width>201</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
@@ -2493,10 +2694,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QPushButton" name="ui_window7_btn_back">
    <property name="geometry">
     <rect>
-     <x>470</x>
-     <y>330</y>
-     <width>75</width>
-     <height>23</height>
+     <x>340</x>
+     <y>370</y>
+     <width>201</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
@@ -2506,49 +2707,55 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window8_lb_calibrationtitle">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>260</y>
-     <width>54</width>
-     <height>12</height>
+     <x>300</x>
+     <y>40</y>
+     <width>311</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="text">
     <string>标定</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QLabel" name="ui_window8_lb_tip">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>300</y>
-     <width>54</width>
-     <height>12</height>
+     <x>220</x>
+     <y>160</y>
+     <width>431</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="text">
     <string>标定提示</string>
    </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QPushButton" name="ui_window8_btn_next">
    <property name="geometry">
     <rect>
-     <x>550</x>
-     <y>320</y>
-     <width>75</width>
-     <height>23</height>
+     <x>70</x>
+     <y>410</y>
+     <width>371</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
     <string>下一步</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="ui_window8_btn_next_2">
+  <widget class="QPushButton" name="ui_window8_btn_back">
    <property name="geometry">
     <rect>
-     <x>620</x>
-     <y>320</y>
-     <width>75</width>
-     <height>23</height>
+     <x>440</x>
+     <y>410</y>
+     <width>381</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
@@ -2559,10 +2766,18 @@ background-image: url(:/new/prefix1/pic/06.jpg);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>310</y>
-     <width>75</width>
+     <y>250</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>标定提示</string>
@@ -2572,10 +2787,18 @@ background-image: url(:/new/prefix1/pic/06.jpg);
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>280</y>
-     <width>75</width>
+     <y>220</y>
+     <width>71</width>
      <height>23</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:0px,white,white;
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
+font-family: &quot;Microsoft YaHei&quot; ! important;
+font:12px;
+</string>
    </property>
    <property name="text">
     <string>试重设置</string>
@@ -2584,10 +2807,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window70_cb_tip1">
    <property name="geometry">
     <rect>
-     <x>770</x>
-     <y>250</y>
-     <width>69</width>
-     <height>22</height>
+     <x>650</x>
+     <y>70</y>
+     <width>80</width>
+     <height>41</height>
     </rect>
    </property>
    <item>
@@ -2609,10 +2832,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window70_cb_tip2">
    <property name="geometry">
     <rect>
-     <x>750</x>
-     <y>310</y>
-     <width>69</width>
-     <height>22</height>
+     <x>640</x>
+     <y>270</y>
+     <width>80</width>
+     <height>41</height>
     </rect>
    </property>
    <item>
@@ -2629,15 +2852,15 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window3_lb_speedthreshold">
    <property name="geometry">
     <rect>
-     <x>780</x>
-     <y>20</y>
+     <x>210</x>
+     <y>50</y>
      <width>142</width>
      <height>23</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>14</pointsize>
+     <pointsize>9</pointsize>
     </font>
    </property>
    <property name="text">
@@ -2647,10 +2870,10 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLineEdit" name="ui_window3_ledit_speedthreshold">
    <property name="geometry">
     <rect>
-     <x>900</x>
-     <y>20</y>
-     <width>80</width>
-     <height>25</height>
+     <x>210</x>
+     <y>70</y>
+     <width>201</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="sizePolicy">
@@ -2660,6 +2883,23 @@ background-image: url(:/new/prefix1/pic/06.jpg);
     </sizepolicy>
    </property>
   </widget>
+  <widget class="QLabel" name="uilabel_background2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>831</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.86, fx:0.5, fy:0.5, stop:0 rgba(80, 174, 195, 255), stop:1 rgba(5, 104, 145, 255));</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>uilabel_background2</zorder>
   <zorder>uilabel_background</zorder>
   <zorder>ui_window6_lb_speedDisplay</zorder>
   <zorder>label_5</zorder>
@@ -2692,8 +2932,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <zorder>calibrateWeightInput1</zorder>
   <zorder>calibrateAngleInput1</zorder>
   <zorder>ui_window8_lb_calibrateLabel</zorder>
-  <zorder>speedLabel_3</zorder>
-  <zorder>label_7</zorder>
+  <zorder>ui_window9_lb_title</zorder>
+  <zorder>ui_window9_lb_k11a</zorder>
   <zorder>ui_window9_ledit_k11AmpDisplay</zorder>
   <zorder>ui_window9_ledit_k11PhaDisplay</zorder>
   <zorder>ui_window9_ledit_k12PhaDisplay</zorder>
@@ -2706,13 +2946,13 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <zorder>ui_window9_ledit_k22AmpDisplay</zorder>
   <zorder>ui_window9_ledit_k21PhaDisplay</zorder>
   <zorder>ui_window9_ledit_k21AmpDisplay</zorder>
-  <zorder>label_14</zorder>
-  <zorder>label_17</zorder>
-  <zorder>label_18</zorder>
-  <zorder>label_23</zorder>
-  <zorder>label_26</zorder>
-  <zorder>label_28</zorder>
-  <zorder>label_29</zorder>
+  <zorder>ui_window9_lb_k11p</zorder>
+  <zorder>ui_window9_lb_k12p</zorder>
+  <zorder>ui_window9_lb_k12a</zorder>
+  <zorder>ui_window9_lb_k21p</zorder>
+  <zorder>ui_window9_lb_k21a</zorder>
+  <zorder>ui_window9_lb_k22p</zorder>
+  <zorder>ui_window9_lb_k22a</zorder>
   <zorder>ui_a</zorder>
   <zorder>ui_b</zorder>
   <zorder>ui_c</zorder>
@@ -2782,7 +3022,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <zorder>ui_window3_lb_rightinitialangle</zorder>
   <zorder>ui_window3_cb_lefttolerance</zorder>
   <zorder>ui_window3_lb_lefttolerance</zorder>
-  <zorder>ui_window3_continuousnum</zorder>
+  <zorder>ui_window3_lb_continuousnum</zorder>
   <zorder>ui_window3_ledit_a</zorder>
   <zorder>ui_window3_ledit_lefttolerance</zorder>
   <zorder>ui_window3_ledit_presetspeed</zorder>
@@ -2825,14 +3065,14 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <zorder>ui_window7_btn_back</zorder>
   <zorder>ui_window8_lb_calibrationtitle</zorder>
   <zorder>ui_window8_lb_tip</zorder>
-  <zorder>ui_window8_btn_next</zorder>
-  <zorder>ui_window8_btn_next_2</zorder>
+  <zorder>ui_window8_btn_back</zorder>
   <zorder>uilabel_window8_calibratetip</zorder>
   <zorder>uilabel_window70_testmass</zorder>
   <zorder>ui_window70_cb_tip1</zorder>
   <zorder>ui_window70_cb_tip2</zorder>
   <zorder>ui_window3_lb_speedthreshold</zorder>
   <zorder>ui_window3_ledit_speedthreshold</zorder>
+  <zorder>ui_window8_btn_next</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

@@ -1,20 +1,37 @@
 QPushButton  
-{    
-    border-style: outset;
-    border-width: 1px;
-    border-color: beige;
-    border-radius:1px;
-    background-color: qlineargradient(spread:reflect, x1:1, y1:0.603, x2:1, y2:0, stop:0.0284091 rgba(0, 0, 0, 255), stop:1 rgba(143, 145, 143, 255));
-    color:white;
+{
+font-family: "Microsoft YaHei" ! important;
+font:18px;
+border:3px solid rgb(80,174,195);
+background-color: rgb(255, 255, 255);
+color: rgb(17, 97, 111);
 
 }  
 
-QLabel
-{
+QComboBox {
+    font:13px;
+    font-family: "Microsoft YaHei" ! important;
+    color:white;
+    border: 0px solid gray;
+    background-color:rgb(44, 147, 173);
+
+}
+
+QComboBox::drop-down {
+    border-left-width: 1px;
+}
+
+QLabel{
+    font:13px;
+    font-family: "Microsoft YaHei" ! important;
     color:white;
 }
 
-QMessageBox
-{
-    background-color:black;
+QRadioButton{
+font:16px;
+font-family: "Microsoft YaHei" ! important;
+}
+
+QLineEdit{
+color:rgb(44, 147, 173);
 }
