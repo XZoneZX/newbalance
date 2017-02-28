@@ -1,7 +1,8 @@
 QPushButton  
 {
-font-family: "Microsoft YaHei" ! important;
+
 font:18px;
+font-family: "Microsoft YaHei" ! important;
 border:3px solid rgb(80,174,195);
 background-color: rgb(255, 255, 255);
 color: rgb(17, 97, 111);

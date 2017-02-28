@@ -117,8 +117,8 @@ public:
     QLabel *ui_window0_comcondition;
     QLabel *ui_window6_gvlb_polar1;
     QLabel *ui_window6_gvlb_polar2;
-    QPushButton *ui_window0_next;
-    QPushButton *ui_window0_selftest;
+    QPushButton *ui_window0_btn_next;
+    QPushButton *ui_window0_btn_selftest;
     QPushButton *uilabel_window2_supportMethod;
     QLabel *ui_window2_lb_support;
     QRadioButton *ui_window2_rb_method1;
@@ -516,6 +516,12 @@ public:
         uilabel_window1_main = new QPushButton(BalancingSys);
         uilabel_window1_main->setObjectName(QStringLiteral("uilabel_window1_main"));
         uilabel_window1_main->setGeometry(QRect(0, 40, 71, 23));
+        QFont font6;
+        font6.setFamily(QStringLiteral("Microsoft YaHei"));
+        font6.setBold(false);
+        font6.setItalic(false);
+        font6.setWeight(50);
+        uilabel_window1_main->setFont(font6);
         uilabel_window1_main->setStyleSheet(QLatin1String("border:0px,white,white;\n"
 "background-color: rgb(255, 255, 255);\n"
 "color: rgb(17, 97, 111);\n"
@@ -678,12 +684,12 @@ public:
         ui_window0_comcondition = new QLabel(BalancingSys);
         ui_window0_comcondition->setObjectName(QStringLiteral("ui_window0_comcondition"));
         ui_window0_comcondition->setGeometry(QRect(180, 220, 501, 200));
-        QFont font6;
-        font6.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
-        font6.setPointSize(14);
-        font6.setBold(true);
-        font6.setWeight(75);
-        ui_window0_comcondition->setFont(font6);
+        QFont font7;
+        font7.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font7.setPointSize(14);
+        font7.setBold(true);
+        font7.setWeight(75);
+        ui_window0_comcondition->setFont(font7);
         ui_window0_comcondition->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
         ui_window6_gvlb_polar1 = new QLabel(BalancingSys);
         ui_window6_gvlb_polar1->setObjectName(QStringLiteral("ui_window6_gvlb_polar1"));
@@ -693,12 +699,16 @@ public:
         ui_window6_gvlb_polar2->setObjectName(QStringLiteral("ui_window6_gvlb_polar2"));
         ui_window6_gvlb_polar2->setGeometry(QRect(500, 40, 220, 220));
         ui_window6_gvlb_polar2->setStyleSheet(QStringLiteral("border: 3px solid white;"));
-        ui_window0_next = new QPushButton(BalancingSys);
-        ui_window0_next->setObjectName(QStringLiteral("ui_window0_next"));
-        ui_window0_next->setGeometry(QRect(440, 410, 381, 71));
-        ui_window0_selftest = new QPushButton(BalancingSys);
-        ui_window0_selftest->setObjectName(QStringLiteral("ui_window0_selftest"));
-        ui_window0_selftest->setGeometry(QRect(70, 410, 371, 71));
+        ui_window0_btn_next = new QPushButton(BalancingSys);
+        ui_window0_btn_next->setObjectName(QStringLiteral("ui_window0_btn_next"));
+        ui_window0_btn_next->setGeometry(QRect(440, 410, 381, 71));
+        QFont font8;
+        font8.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font8.setPointSize(18);
+        ui_window0_btn_next->setFont(font8);
+        ui_window0_btn_selftest = new QPushButton(BalancingSys);
+        ui_window0_btn_selftest->setObjectName(QStringLiteral("ui_window0_btn_selftest"));
+        ui_window0_btn_selftest->setGeometry(QRect(70, 410, 371, 71));
         uilabel_window2_supportMethod = new QPushButton(BalancingSys);
         uilabel_window2_supportMethod->setObjectName(QStringLiteral("uilabel_window2_supportMethod"));
         uilabel_window2_supportMethod->setGeometry(QRect(0, 70, 71, 23));
@@ -733,10 +743,7 @@ public:
         ui_window2_lbpic_method1 = new QLabel(BalancingSys);
         ui_window2_lbpic_method1->setObjectName(QStringLiteral("ui_window2_lbpic_method1"));
         ui_window2_lbpic_method1->setGeometry(QRect(130, 115, 151, 101));
-        ui_window2_lbpic_method1->setStyleSheet(QLatin1String("QLabel\n"
-"{\n"
-"background-image: url(:/new/prefix1/pic/01.jpg);\n"
-"}"));
+        ui_window2_lbpic_method1->setStyleSheet(QStringLiteral(""));
         ui_window2_lbpic_method2 = new QLabel(BalancingSys);
         ui_window2_lbpic_method2->setObjectName(QStringLiteral("ui_window2_lbpic_method2"));
         ui_window2_lbpic_method2->setGeometry(QRect(370, 115, 151, 101));
@@ -777,28 +784,20 @@ public:
         ui_window2_btn_next->setGeometry(QRect(440, 410, 381, 71));
         ui_window3_cb_a = new QComboBox(BalancingSys);
         ui_window3_cb_a->setObjectName(QStringLiteral("ui_window3_cb_a"));
-        ui_window3_cb_a->setGeometry(QRect(640, 50, 95, 22));
-        ui_window3_cb_a->setStyleSheet(QLatin1String("QComboBox {\n"
-"    color:white;\n"
-"    border: 0px solid gray;\n"
-"    background-color:rgb(44, 147, 173);\n"
-"\n"
-"}\n"
-"QComboBox::drop-down {\n"
-"border-left-width: 1px;\n"
-"}"));
+        ui_window3_cb_a->setGeometry(QRect(640, 45, 95, 22));
+        ui_window3_cb_a->setStyleSheet(QStringLiteral(""));
         ui_window3_cb_presetspeed = new QComboBox(BalancingSys);
         ui_window3_cb_presetspeed->setObjectName(QStringLiteral("ui_window3_cb_presetspeed"));
-        ui_window3_cb_presetspeed->setGeometry(QRect(350, 340, 69, 22));
+        ui_window3_cb_presetspeed->setGeometry(QRect(350, 335, 69, 22));
         ui_window3_cb_righttolerance = new QComboBox(BalancingSys);
         ui_window3_cb_righttolerance->setObjectName(QStringLiteral("ui_window3_cb_righttolerance"));
-        ui_window3_cb_righttolerance->setGeometry(QRect(670, 200, 69, 22));
+        ui_window3_cb_righttolerance->setGeometry(QRect(670, 195, 69, 22));
         ui_window3_cb_leftinitialangle = new QComboBox(BalancingSys);
         ui_window3_cb_leftinitialangle->setObjectName(QStringLiteral("ui_window3_cb_leftinitialangle"));
-        ui_window3_cb_leftinitialangle->setGeometry(QRect(340, 115, 69, 22));
+        ui_window3_cb_leftinitialangle->setGeometry(QRect(340, 110, 69, 22));
         ui_window3_cb_rightinitialangle = new QComboBox(BalancingSys);
         ui_window3_cb_rightinitialangle->setObjectName(QStringLiteral("ui_window3_cb_rightinitialangle"));
-        ui_window3_cb_rightinitialangle->setGeometry(QRect(650, 340, 69, 22));
+        ui_window3_cb_rightinitialangle->setGeometry(QRect(650, 335, 69, 22));
         ui_window3_lb_a = new QLabel(BalancingSys);
         ui_window3_lb_a->setObjectName(QStringLiteral("ui_window3_lb_a"));
         ui_window3_lb_a->setGeometry(QRect(480, 50, 120, 20));
@@ -822,7 +821,7 @@ public:
         ui_window3_lb_rightinitialangle->setGeometry(QRect(510, 340, 140, 20));
         ui_window3_cb_lefttolerance = new QComboBox(BalancingSys);
         ui_window3_cb_lefttolerance->setObjectName(QStringLiteral("ui_window3_cb_lefttolerance"));
-        ui_window3_cb_lefttolerance->setGeometry(QRect(350, 200, 69, 22));
+        ui_window3_cb_lefttolerance->setGeometry(QRect(350, 195, 69, 22));
         ui_window3_lb_lefttolerance = new QLabel(BalancingSys);
         ui_window3_lb_lefttolerance->setObjectName(QStringLiteral("ui_window3_lb_lefttolerance"));
         ui_window3_lb_lefttolerance->setGeometry(QRect(190, 200, 160, 20));
@@ -965,6 +964,10 @@ public:
         ui_window8_btn_next = new QPushButton(BalancingSys);
         ui_window8_btn_next->setObjectName(QStringLiteral("ui_window8_btn_next"));
         ui_window8_btn_next->setGeometry(QRect(70, 410, 371, 71));
+        QFont font9;
+        font9.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font9.setPointSize(9);
+        ui_window8_btn_next->setFont(font9);
         ui_window8_btn_back = new QPushButton(BalancingSys);
         ui_window8_btn_back->setObjectName(QStringLiteral("ui_window8_btn_back"));
         ui_window8_btn_back->setGeometry(QRect(440, 410, 381, 71));
@@ -995,9 +998,9 @@ public:
         ui_window3_lb_speedthreshold = new QLabel(BalancingSys);
         ui_window3_lb_speedthreshold->setObjectName(QStringLiteral("ui_window3_lb_speedthreshold"));
         ui_window3_lb_speedthreshold->setGeometry(QRect(210, 50, 142, 23));
-        QFont font7;
-        font7.setPointSize(9);
-        ui_window3_lb_speedthreshold->setFont(font7);
+        QFont font10;
+        font10.setPointSize(9);
+        ui_window3_lb_speedthreshold->setFont(font10);
         ui_window3_ledit_speedthreshold = new QLineEdit(BalancingSys);
         ui_window3_ledit_speedthreshold->setObjectName(QStringLiteral("ui_window3_ledit_speedthreshold"));
         ui_window3_ledit_speedthreshold->setGeometry(QRect(210, 70, 201, 31));
@@ -1099,8 +1102,8 @@ public:
         ui_window0_comcondition->raise();
         ui_window6_gvlb_polar1->raise();
         ui_window6_gvlb_polar2->raise();
-        ui_window0_next->raise();
-        ui_window0_selftest->raise();
+        ui_window0_btn_next->raise();
+        ui_window0_btn_selftest->raise();
         uilabel_window2_supportMethod->raise();
         ui_window2_lb_support->raise();
         ui_window2_rb_method1->raise();
@@ -1271,8 +1274,8 @@ public:
         ui_window0_comcondition->setText(QApplication::translate("BalancingSys", "\346\217\220\347\244\272COM\347\212\266\346\200\201", 0));
         ui_window6_gvlb_polar1->setText(QApplication::translate("BalancingSys", "TextLabel", 0));
         ui_window6_gvlb_polar2->setText(QApplication::translate("BalancingSys", "TextLabel", 0));
-        ui_window0_next->setText(QApplication::translate("BalancingSys", "\344\270\213\344\270\200\346\255\245", 0));
-        ui_window0_selftest->setText(QApplication::translate("BalancingSys", "\350\207\252\346\243\200", 0));
+        ui_window0_btn_next->setText(QApplication::translate("BalancingSys", "\344\270\213\344\270\200\346\255\245", 0));
+        ui_window0_btn_selftest->setText(QApplication::translate("BalancingSys", "\350\207\252\346\243\200", 0));
         uilabel_window2_supportMethod->setText(QApplication::translate("BalancingSys", "\346\224\257\346\211\277\346\226\271\345\274\217\350\256\276\347\275\256", 0));
         ui_window2_lb_support->setText(QApplication::translate("BalancingSys", "\346\224\257\346\211\277\346\226\271\345\274\217\350\256\276\347\275\256", 0));
         ui_window2_rb_method1->setText(QApplication::translate("BalancingSys", "\346\226\271\345\274\217\344\270\200", 0));

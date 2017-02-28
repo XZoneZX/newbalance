@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <QtWidgets>
+#include <QPixmap>
 #include "serialthread.h"
 #include "calculatefunction.h"
 
@@ -28,6 +29,7 @@ private slots:
     void SerialOpenError (int errorCode);
     void speedDisplayRefresh (int fre);
     void dataCalculate (qreal d11, qreal d12, qreal d21, qreal d22, qreal f);
+    void resizeEvent(QResizeEvent *);
 
     void on_paramentOkBtn_clicked();
 
@@ -51,7 +53,7 @@ private slots:
 
     void on_ui_window0_cb_comport_currentIndexChanged(const QString &arg1);
 
-    void on_ui_window0_next_clicked();
+    void on_ui_window0_btn_next_clicked();
 
     void on_uilabel_window2_supportMethod_clicked();
 
@@ -93,7 +95,7 @@ private slots:
 
     void on_ui_window6_btn_parameterorgraphic_clicked();
 
-    void on_ui_window0_selftest_clicked();
+    void on_ui_window0_btn_selftest_clicked();
 
     void on_ui_window6_btn_measure_clicked();
 
@@ -125,6 +127,10 @@ private:
     QButtonGroup *rightCorrectMethodGroup;
     QButtonGroup *displayModeGroup;
     QButtonGroup *rotationGroup;
+
+    qint32 windowHeight,windowWidth;
+
+    QPixmap pic1,pic2,pic3,pic4,pic5,pic6;
 
 };
 

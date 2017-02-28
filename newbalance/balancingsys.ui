@@ -1119,6 +1119,15 @@ font:12px;
      <height>23</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">border:0px,white,white;
 background-color: rgb(255, 255, 255);
@@ -1640,7 +1649,7 @@ font:12px;
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="ui_window0_next">
+  <widget class="QPushButton" name="ui_window0_btn_next">
    <property name="geometry">
     <rect>
      <x>440</x>
@@ -1649,11 +1658,17 @@ font:12px;
      <height>71</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>下一步</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="ui_window0_selftest">
+  <widget class="QPushButton" name="ui_window0_btn_selftest">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -1791,10 +1806,7 @@ font:12px;
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QLabel
-{
-background-image: url(:/new/prefix1/pic/01.jpg);
-}</string>
+    <string notr="true"/>
    </property>
    <property name="text">
     <string/>
@@ -1918,15 +1930,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">QComboBox {
-    color:white;
-    border: 0px solid gray;
-    background-color:rgb(44, 147, 173);
-
-}
-QComboBox::drop-down {
-border-left-width: 1px;
-}</string>
+    <string notr="true"/>
    </property>
    <item>
     <property name="text">
@@ -2745,6 +2749,12 @@ border-left-width: 1px;
      <height>71</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>下一步</string>
    </property>
@@ -2991,8 +3001,8 @@ font:12px;
   <zorder>ui_window0_comcondition</zorder>
   <zorder>ui_window6_gvlb_polar1</zorder>
   <zorder>ui_window6_gvlb_polar2</zorder>
-  <zorder>ui_window0_next</zorder>
-  <zorder>ui_window0_selftest</zorder>
+  <zorder>ui_window0_btn_next</zorder>
+  <zorder>ui_window0_btn_selftest</zorder>
   <zorder>uilabel_window2_supportMethod</zorder>
   <zorder>ui_window2_lb_support</zorder>
   <zorder>ui_window2_rb_method1</zorder>
