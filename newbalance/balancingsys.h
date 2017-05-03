@@ -103,6 +103,8 @@ private slots:
 
     void on_ui_window8_btn_back_clicked();
 
+    void on_ui_window9_btn_back_clicked();
+
 private:
     void initui_window0_cb_comport( );
     void dataDisplayFresh(qreal a1, qreal p1, qreal a2, qreal p2);
@@ -113,6 +115,7 @@ private:
     bool saveFile(const QString &filename);
     void saveTheParameter();
     void drawPolarPoint(qreal a, qreal p,QLabel *polar);
+    void showParameter();
 
 
     CalculateFunction calculateFunction;
@@ -128,7 +131,7 @@ private:
     QButtonGroup *displayModeGroup;
     QButtonGroup *rotationGroup;
 
-    qint32 windowHeight,windowWidth;
+    qint32 windowHeight,windowWidth,initialHeight,initialWidth;
 
     QPixmap pic1,pic2,pic3,pic4,pic5,pic6;
 

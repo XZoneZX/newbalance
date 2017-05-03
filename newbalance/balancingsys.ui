@@ -10,6 +10,18 @@
     <height>486</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>354</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>BalancingSys</string>
   </property>
@@ -52,8 +64,8 @@
   <widget class="QLabel" name="ui_window6_lb_leftAngleDisplay">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>330</y>
+     <x>200</x>
+     <y>365</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -83,8 +95,8 @@
   <widget class="QLabel" name="ui_window6_lb_rightAngleDisplay">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>350</y>
+     <x>530</x>
+     <y>365</y>
      <width>231</width>
      <height>31</height>
     </rect>
@@ -158,7 +170,7 @@
    <property name="geometry">
     <rect>
      <x>405</x>
-     <y>370</y>
+     <y>385</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -235,8 +247,8 @@ color: rgb(17, 97, 111);</string>
   <widget class="QLabel" name="ui_window6_lb_leftWeightDisplay">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>300</y>
+     <x>200</x>
+     <y>335</y>
      <width>211</width>
      <height>31</height>
     </rect>
@@ -253,8 +265,8 @@ color: rgb(17, 97, 111);</string>
   <widget class="QLabel" name="ui_window6_lb_rightWeightDisplay">
    <property name="geometry">
     <rect>
-     <x>490</x>
-     <y>320</y>
+     <x>530</x>
+     <y>335</y>
      <width>231</width>
      <height>31</height>
     </rect>
@@ -587,10 +599,10 @@ QComboBox::down-arrow {
   <widget class="QLabel" name="ui_window8_lb_calibrateLabel">
    <property name="geometry">
     <rect>
-     <x>740</x>
-     <y>230</y>
-     <width>181</width>
-     <height>51</height>
+     <x>220</x>
+     <y>160</y>
+     <width>431</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -598,6 +610,9 @@ QComboBox::down-arrow {
    </property>
    <property name="text">
     <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="ui_window9_lb_title">
@@ -1317,7 +1332,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>405</x>
-     <y>280</y>
+     <y>295</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1337,7 +1352,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>405</x>
-     <y>310</y>
+     <y>325</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1357,7 +1372,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>405</x>
-     <y>400</y>
+     <y>415</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1377,7 +1392,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>405</x>
-     <y>340</y>
+     <y>355</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1397,7 +1412,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>405</x>
-     <y>430</y>
+     <y>445</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1417,7 +1432,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>300</x>
-     <y>270</y>
+     <y>285</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -1430,7 +1445,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>510</x>
-     <y>270</y>
+     <y>285</y>
      <width>89</width>
      <height>16</height>
     </rect>
@@ -1443,7 +1458,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>200</x>
-     <y>270</y>
+     <y>285</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1463,7 +1478,7 @@ color: rgb(17, 97, 111);</string>
    <property name="geometry">
     <rect>
      <x>610</x>
-     <y>270</y>
+     <y>285</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -1621,7 +1636,7 @@ font:12px;
    <property name="geometry">
     <rect>
      <x>170</x>
-     <y>40</y>
+     <y>30</y>
      <width>220</width>
      <height>220</height>
     </rect>
@@ -1637,7 +1652,7 @@ font:12px;
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>40</y>
+     <y>30</y>
      <width>220</width>
      <height>220</height>
     </rect>
@@ -1702,7 +1717,7 @@ font:12px;
     <string>支承方式设置</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ui_window2_lb_support">
+  <widget class="QLabel" name="ui_window2_lb_title">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -1710,6 +1725,22 @@ font:12px;
      <width>261</width>
      <height>50</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+    font:17px;
+    font-family: &quot;Microsoft YaHei&quot; ! important;
+    color:white;
+}</string>
    </property>
    <property name="text">
     <string>支承方式设置</string>
@@ -1923,7 +1954,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_a">
    <property name="geometry">
     <rect>
-     <x>640</x>
+     <x>1000</x>
      <y>45</y>
      <width>95</width>
      <height>22</height>
@@ -1951,8 +1982,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_presetspeed">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>335</y>
+     <x>487</x>
+     <y>115</y>
      <width>69</width>
      <height>22</height>
     </rect>
@@ -2006,8 +2037,8 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QComboBox" name="ui_window3_cb_leftinitialangle">
    <property name="geometry">
     <rect>
-     <x>340</x>
-     <y>110</y>
+     <x>350</x>
+     <y>335</y>
      <width>69</width>
      <height>22</height>
     </rect>
@@ -2046,7 +2077,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window3_lb_a">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>830</x>
      <y>50</y>
      <width>120</width>
      <height>20</height>
@@ -2059,7 +2090,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window3_lb_presetspeed">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>380</x>
      <y>115</y>
      <width>160</width>
      <height>21</height>
@@ -2190,7 +2221,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window3_lb_continuousnum">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>560</x>
      <y>115</y>
      <width>191</width>
      <height>20</height>
@@ -2203,7 +2234,7 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLineEdit" name="ui_window3_ledit_a">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>1000</x>
      <y>70</y>
      <width>201</width>
      <height>31</height>
@@ -2223,9 +2254,9 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLineEdit" name="ui_window3_ledit_presetspeed">
    <property name="geometry">
     <rect>
-     <x>210</x>
+     <x>380</x>
      <y>135</y>
-     <width>201</width>
+     <width>140</width>
      <height>31</height>
     </rect>
    </property>
@@ -2283,9 +2314,9 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLineEdit" name="ui_window3_ledit_continuousnum">
    <property name="geometry">
     <rect>
-     <x>480</x>
+     <x>560</x>
      <y>135</y>
-     <width>201</width>
+     <width>140</width>
      <height>31</height>
     </rect>
    </property>
@@ -2513,11 +2544,27 @@ background-image: url(:/new/prefix1/pic/06.jpg);
   <widget class="QLabel" name="ui_window5_lb_title">
    <property name="geometry">
     <rect>
-     <x>300</x>
+     <x>340</x>
      <y>40</y>
      <width>201</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei</family>
+     <pointsize>-1</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+    font:17px;
+    font-family: &quot;Microsoft YaHei&quot; ! important;
+    color:white;
+}</string>
    </property>
    <property name="text">
     <string>参数汇总</string>
@@ -2862,8 +2909,8 @@ font:12px;
   <widget class="QLabel" name="ui_window3_lb_speedthreshold">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>50</y>
+     <x>190</x>
+     <y>115</y>
      <width>142</width>
      <height>23</height>
     </rect>
@@ -2880,9 +2927,9 @@ font:12px;
   <widget class="QLineEdit" name="ui_window3_ledit_speedthreshold">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>70</y>
-     <width>201</width>
+     <x>190</x>
+     <y>135</y>
+     <width>140</width>
      <height>31</height>
     </rect>
    </property>
@@ -2907,6 +2954,32 @@ font:12px;
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ui_window9_btn_back">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>410</y>
+     <width>201</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QScrollBar" name="ui_window6_sb_num">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>260</y>
+     <width>411</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
    </property>
   </widget>
   <zorder>uilabel_background2</zorder>
@@ -3004,7 +3077,7 @@ font:12px;
   <zorder>ui_window0_btn_next</zorder>
   <zorder>ui_window0_btn_selftest</zorder>
   <zorder>uilabel_window2_supportMethod</zorder>
-  <zorder>ui_window2_lb_support</zorder>
+  <zorder>ui_window2_lb_title</zorder>
   <zorder>ui_window2_rb_method1</zorder>
   <zorder>ui_window2_rb_method2</zorder>
   <zorder>ui_window2_rb_method3</zorder>
@@ -3083,6 +3156,8 @@ font:12px;
   <zorder>ui_window3_lb_speedthreshold</zorder>
   <zorder>ui_window3_ledit_speedthreshold</zorder>
   <zorder>ui_window8_btn_next</zorder>
+  <zorder>ui_window9_btn_back</zorder>
+  <zorder>ui_window6_sb_num</zorder>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

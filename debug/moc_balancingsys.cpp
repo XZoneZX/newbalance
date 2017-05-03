@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_BalancingSys_t {
-    QByteArrayData data[54];
-    char stringdata0[1480];
+    QByteArrayData data[55];
+    char stringdata0[1511];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -82,7 +82,8 @@ QT_MOC_LITERAL(49, 1304, 44), // "on_ui_window6_btn_parameteror..."
 QT_MOC_LITERAL(50, 1349, 34), // "on_ui_window0_btn_selftest_cl..."
 QT_MOC_LITERAL(51, 1384, 33), // "on_ui_window6_btn_measure_cli..."
 QT_MOC_LITERAL(52, 1418, 30), // "on_ui_window6_btn_back_clicked"
-QT_MOC_LITERAL(53, 1449, 30) // "on_ui_window8_btn_back_clicked"
+QT_MOC_LITERAL(53, 1449, 30), // "on_ui_window8_btn_back_clicked"
+QT_MOC_LITERAL(54, 1480, 30) // "on_ui_window9_btn_back_clicked"
 
     },
     "BalancingSys\0on_ui_window6_btn_startButton_clicked\0"
@@ -125,7 +126,8 @@ QT_MOC_LITERAL(53, 1449, 30) // "on_ui_window8_btn_back_clicked"
     "on_ui_window0_btn_selftest_clicked\0"
     "on_ui_window6_btn_measure_clicked\0"
     "on_ui_window6_btn_back_clicked\0"
-    "on_ui_window8_btn_back_clicked"
+    "on_ui_window8_btn_back_clicked\0"
+    "on_ui_window9_btn_back_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -135,7 +137,7 @@ static const uint qt_meta_data_BalancingSys[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      43,   14, // methods
+      44,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -143,49 +145,50 @@ static const uint qt_meta_data_BalancingSys[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,  229,    2, 0x08 /* Private */,
-       3,    0,  230,    2, 0x08 /* Private */,
-       4,    0,  231,    2, 0x08 /* Private */,
-       5,    1,  232,    2, 0x08 /* Private */,
-       7,    1,  235,    2, 0x08 /* Private */,
-       9,    5,  238,    2, 0x08 /* Private */,
-      15,    1,  249,    2, 0x08 /* Private */,
-      17,    0,  252,    2, 0x08 /* Private */,
-      18,    0,  253,    2, 0x08 /* Private */,
-      19,    0,  254,    2, 0x08 /* Private */,
-      20,    0,  255,    2, 0x08 /* Private */,
-      21,    0,  256,    2, 0x08 /* Private */,
-      22,    0,  257,    2, 0x08 /* Private */,
-      23,    0,  258,    2, 0x08 /* Private */,
-      24,    0,  259,    2, 0x08 /* Private */,
-      25,    0,  260,    2, 0x08 /* Private */,
-      26,    0,  261,    2, 0x08 /* Private */,
-      27,    1,  262,    2, 0x08 /* Private */,
-      29,    0,  265,    2, 0x08 /* Private */,
-      30,    0,  266,    2, 0x08 /* Private */,
-      31,    0,  267,    2, 0x08 /* Private */,
-      32,    0,  268,    2, 0x08 /* Private */,
-      33,    0,  269,    2, 0x08 /* Private */,
-      34,    0,  270,    2, 0x08 /* Private */,
-      35,    0,  271,    2, 0x08 /* Private */,
-      36,    0,  272,    2, 0x08 /* Private */,
-      37,    0,  273,    2, 0x08 /* Private */,
-      38,    0,  274,    2, 0x08 /* Private */,
-      39,    0,  275,    2, 0x08 /* Private */,
-      40,    0,  276,    2, 0x08 /* Private */,
-      41,    0,  277,    2, 0x08 /* Private */,
-      42,    0,  278,    2, 0x08 /* Private */,
-      43,    0,  279,    2, 0x08 /* Private */,
-      44,    0,  280,    2, 0x08 /* Private */,
-      45,    0,  281,    2, 0x08 /* Private */,
-      46,    0,  282,    2, 0x08 /* Private */,
-      47,    0,  283,    2, 0x08 /* Private */,
-      48,    0,  284,    2, 0x08 /* Private */,
-      49,    0,  285,    2, 0x08 /* Private */,
-      50,    0,  286,    2, 0x08 /* Private */,
-      51,    0,  287,    2, 0x08 /* Private */,
-      52,    0,  288,    2, 0x08 /* Private */,
-      53,    0,  289,    2, 0x08 /* Private */,
+       1,    0,  234,    2, 0x08 /* Private */,
+       3,    0,  235,    2, 0x08 /* Private */,
+       4,    0,  236,    2, 0x08 /* Private */,
+       5,    1,  237,    2, 0x08 /* Private */,
+       7,    1,  240,    2, 0x08 /* Private */,
+       9,    5,  243,    2, 0x08 /* Private */,
+      15,    1,  254,    2, 0x08 /* Private */,
+      17,    0,  257,    2, 0x08 /* Private */,
+      18,    0,  258,    2, 0x08 /* Private */,
+      19,    0,  259,    2, 0x08 /* Private */,
+      20,    0,  260,    2, 0x08 /* Private */,
+      21,    0,  261,    2, 0x08 /* Private */,
+      22,    0,  262,    2, 0x08 /* Private */,
+      23,    0,  263,    2, 0x08 /* Private */,
+      24,    0,  264,    2, 0x08 /* Private */,
+      25,    0,  265,    2, 0x08 /* Private */,
+      26,    0,  266,    2, 0x08 /* Private */,
+      27,    1,  267,    2, 0x08 /* Private */,
+      29,    0,  270,    2, 0x08 /* Private */,
+      30,    0,  271,    2, 0x08 /* Private */,
+      31,    0,  272,    2, 0x08 /* Private */,
+      32,    0,  273,    2, 0x08 /* Private */,
+      33,    0,  274,    2, 0x08 /* Private */,
+      34,    0,  275,    2, 0x08 /* Private */,
+      35,    0,  276,    2, 0x08 /* Private */,
+      36,    0,  277,    2, 0x08 /* Private */,
+      37,    0,  278,    2, 0x08 /* Private */,
+      38,    0,  279,    2, 0x08 /* Private */,
+      39,    0,  280,    2, 0x08 /* Private */,
+      40,    0,  281,    2, 0x08 /* Private */,
+      41,    0,  282,    2, 0x08 /* Private */,
+      42,    0,  283,    2, 0x08 /* Private */,
+      43,    0,  284,    2, 0x08 /* Private */,
+      44,    0,  285,    2, 0x08 /* Private */,
+      45,    0,  286,    2, 0x08 /* Private */,
+      46,    0,  287,    2, 0x08 /* Private */,
+      47,    0,  288,    2, 0x08 /* Private */,
+      48,    0,  289,    2, 0x08 /* Private */,
+      49,    0,  290,    2, 0x08 /* Private */,
+      50,    0,  291,    2, 0x08 /* Private */,
+      51,    0,  292,    2, 0x08 /* Private */,
+      52,    0,  293,    2, 0x08 /* Private */,
+      53,    0,  294,    2, 0x08 /* Private */,
+      54,    0,  295,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -206,6 +209,7 @@ static const uint qt_meta_data_BalancingSys[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::QString,   28,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -284,6 +288,7 @@ void BalancingSys::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         case 40: _t->on_ui_window6_btn_measure_clicked(); break;
         case 41: _t->on_ui_window6_btn_back_clicked(); break;
         case 42: _t->on_ui_window8_btn_back_clicked(); break;
+        case 43: _t->on_ui_window9_btn_back_clicked(); break;
         default: ;
         }
     }
@@ -314,13 +319,13 @@ int BalancingSys::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 43)
+        if (_id < 44)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 43;
+        _id -= 44;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 43)
+        if (_id < 44)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 43;
+        _id -= 44;
     }
     return _id;
 }
